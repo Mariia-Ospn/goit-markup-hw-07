@@ -1,0 +1,134 @@
+@media screen and (min-width: 1200px) {
+
+.container {
+    max-width: 1158px;
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+.item + .item {
+    margin-left: 24px;
+  }
+/*.............................HEADER.......................*/
+/* Контакты */
+  .contacts-list { 
+    display: flex;
+  }
+  .contacts-mail-phone {
+    padding-top: 24px;
+    padding-bottom: 24px;
+   
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .contacts-mail {
+    display: inline;
+  }
+
+  .contacts-item + .contacts-item {
+    margin-left: 40px;
+  } 
+
+/*.............................MAIN.......................*/
+/*.............................HERO.......................*/
+.hero-title {
+    margin-bottom: 48px;
+}
+.hero-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    height: 600px;
+    max-width: 1440px;
+  }
+/*.............................SECTIONS.......................*/
+/*.............................OUR PRINCIPLES.......................*/
+  .our-principles-section {
+    padding-bottom: 0;
+  }
+  .our-principles-list {
+    margin-bottom: 0; 
+  }
+.our-principles-item>.section-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: start;
+  }
+  .our-principles-list {
+    flex-wrap: nowrap;
+    gap: 0;
+}
+  .our-principles-item {
+    flex-basis: calc((100%-3 * 24) / 4);
+    margin-bottom: 0;
+  }
+
+  .our-principles-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 112px;
+    background-color: var(--secondary-background-color);
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+  /*.............................WE DOING.......................*/
+   .we-doing-section {
+    display: flex;
+  }
+  .we-doing-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+  }
+
+ /*.............................TEAM.......................*/
+  .team-section-list {
+    flex-wrap: nowrap;
+    gap: 0;}
+
+  .team-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+
+/*.............................COSTUMERS.......................*/
+/*............................./MAIN.......................*/
+
+/*.............................FOOTER.......................*/
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  
+  .footer-container {
+    flex-wrap: nowrap;
+  }
+  .footer-logo-box {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    }
+  .footer-container-soc {
+  margin-left: 120px;
+  }
+  .form-wrap {
+    display: block;
+  margin-left: auto;
+  }
+
+
+  .footer-input {
+    width: 260px;
+    opacity: 1;
+  }
+
+
+
+
+
+}

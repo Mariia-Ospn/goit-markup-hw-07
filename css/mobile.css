@@ -1,0 +1,92 @@
+
+@media screen and (max-width: 480px) { 
+/*.............................HEADER.......................*/
+
+/*.............................MAIN.......................*/
+/*.............................HERO.......................*/
+.hero-title {
+    margin-bottom: 72px;
+    width: 320px;
+
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+
+.hero-section {
+    height: 432px;
+    max-width: 428px;
+  }
+/*.............................SECTIONS.......................*/
+/*.............................OUR PRINCIPLES.......................*/
+
+
+/*.............................TEAM.......................*/
+.team-section-list{
+    margin-bottom: -72px;  
+}
+.team-item {
+    width: 264px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+}
+
+/*.............................COSTUMERS.......................*/
+.costumers-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.customers-item {
+    flex-basis: calc((100% - 24px) / 2);
+    height: 88px;
+  }
+
+/*............................./MAIN.......................*/
+
+/*.............................FOOTER.......................*/
+
+ .footer-logo-box {
+    margin-bottom: 72px;
+  }
+  .footer-logo-box>.logo {
+    justify-content: center;
+  }
+  .footer-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-container-soc {
+    margin-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-subtitle {
+    text-align: center;
+  }
+  .form-wrap {
+    width: 100%;
+  }
+  .form-wrap b {
+    text-align: center;
+  }
+
+  .footer-input {
+    width: 100%;
+    margin-bottom: 16px;
+    opacity: 0.6;
+  }
+  .footer-btn {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+}
+
+
+
+
+
+
+
