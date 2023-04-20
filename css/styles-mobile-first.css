@@ -514,7 +514,7 @@ p {
   transition: transform var(--typical-transition);
 
   width: 408px;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
 
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -664,6 +664,7 @@ margin-bottom: 16px;
 }
 .check-text a{
 color: var(--accent-color);
+/* margin-left: auto; */
 }
 
 .check-text span {
