@@ -1,6 +1,6 @@
 
 @media screen and (max-width: 480px) { 
-/*.............................HEADER.......................*/
+/* .............................HEADER.......................
 .header-container {
   justify-content: space-between;
 }
@@ -9,7 +9,7 @@
   }
 
 /*.............................MOBILE MENU.......................*/
-.menu-open-btn {
+/* .menu-open-btn {
   background-color: transparent;
   border:none;
   } 
@@ -85,10 +85,10 @@
   }
   .mobile-soc-list {
     justify-content: space-around;
-  }
+  }  */
 /*.............................MAIN.......................*/
 /*.............................HERO.......................*/
-.hero-title {
+/* .hero-title {
     margin-bottom: 72px;
     width: 320px;
 
@@ -100,12 +100,12 @@
 .hero-section {
     height: 432px;
     max-width: 428px;
-  }
+  } */
 /*.............................SECTIONS.......................*/
 /*.............................OUR PRINCIPLES.......................*/
 
 
-/*.............................TEAM.......................*/
+/* .............................TEAM.......................
 .team-section-list{
     margin-bottom: -72px;  
 }
@@ -114,9 +114,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
-}
+} */
 
-/*.............................COSTUMERS.......................*/
+/* .............................COSTUMERS.......................
 .costumers-list {
     display: flex;
     flex-wrap: wrap;
@@ -124,12 +124,12 @@
 .customers-item {
     flex-basis: calc((100% - 24px) / 2);
     height: 88px;
-  }
+  } */
 
 /*............................./MAIN.......................*/
 
 /*.............................FOOTER.......................*/
-.footer-container {
+/* .footer-container {
   flex-direction: column;
   text-align: center;
   align-items: center;
@@ -160,7 +160,7 @@ text-align: start;
   .footer-btn {
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
 
 
 

@@ -126,11 +126,100 @@ p {
 .header-logo:focus {
   color: var(--accent-color);
 }
+
+/*.............................HEADER.......................*/
+.header-container {
+  justify-content: space-between;
+}
+.header-list, .contacts-list {
+  display: none;
+  }
+
+/*.............................MOBILE MENU.......................*/
+.menu-open-btn {
+  background-color: transparent;
+  border:none;
+  } 
+  .menu-open-icon{
+  stroke: #2E2F42;
+  }
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 80px 24px 40px 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+.menu-close-btn {
+  background-color: rgb(231, 233, 252, 0);
+}
+.menu-close-btn:hover {
+  background-color: var(--pressed-state-color);
+}
+  .mobile-menu-list {
+    margin-bottom: 64px;
+  }
+  .mobile-menu-item:not(:last-child) {
+    margin-bottom:40px;
+  }
+  .mobile-menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+  
+    transition: color var(--typical-transition);
+  }
+  .mobile-menu-link:hover,
+  .mobile-menu-link:focus {
+    color: var(--pressed-state-color);
+  }
+  .mobile-mail-phone {
+  display: block;
+  color: var(--primery-text-color);
+  transition: color var(--typical-transition);
+  }
+  .mobile-mail-phone:hover,
+  .mobile-mail-phone:focus {
+    color: var(--pressed-state-color); 
+  }
+  .mobile-phone{
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+  }
+  .mobile-mail {
+    margin-bottom: 48px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .mobile-soc-list {
+    justify-content: space-around;
+  }
 /*.............................MAIN.......................*/
 
 /*.............................HERO.......................*/
 
 .hero-section {
+  height: 432px;
+  max-width: 428px;
   background-color: #2e2f42;
   text-align: center;
   padding-top: 112px;
@@ -153,8 +242,15 @@ p {
 
   font-style: normal;
   font-weight: 700;
+  margin-bottom: 72px;
+  width: 320px;
+
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
   color: #ffffff;
 }
+
 .hero-btn {
   display: inline-block;
   border-radius: 4px;
@@ -211,8 +307,15 @@ p {
 .team-section {
   background-color: var(--secondary-background-color);
 }
-
+.team-section-list{
+  margin-bottom: -72px;  
+}
 .team-item {
+  width: 264px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+
   background-color: var(--primery-background-color);
   text-align: center;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -256,12 +359,18 @@ p {
   fill: currentColor;
 }
 
+
 /*.............................COSTUMERS.......................*/
 .costumers-list {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
 }
-
+.customers-item {
+  flex-basis: calc((100% - 24px) / 2);
+  height: 88px;
+}
 .customers-link {
   width: 100%;
   height: 100%;
@@ -385,6 +494,9 @@ p {
   padding-top: 96px;
   padding-bottom: 96px;
 }
+.footer-logo-box>.logo {
+  justify-content: center;
+}
 .footer-logo-link {
   padding-top: 0;
   padding-bottom: 0;
@@ -403,8 +515,9 @@ p {
 
 .footer-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 72px;
   width: 264px;
+  text-align: start;
 
   font-size: 16px;
   line-height: 1.5;
@@ -412,17 +525,16 @@ p {
   color: #f4f4fd;
 }
 
-
 .footer-container-soc {
   width: 208px;
+  margin-bottom: 72px;
 }
-
 .footer-subtitle {
   margin-bottom: 16px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
@@ -430,22 +542,17 @@ p {
 .soc-list-footer {
   gap: 16px;
 }
-
-.soc-link-footer {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.soc-link-footer:hover,
-.soc-link-footer:focus {
-  background-color: #31d0aa;
-}
-
 /*.............................FOOTER FORM.......................*/
 .footer-container {
   display: flex;
-}
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+} 
 
 .form-wrap {
   display: block;
+  width: 100%;  
 }
 .form-wrap b {
   display: block;
@@ -453,7 +560,7 @@ p {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
@@ -470,8 +577,10 @@ p {
 }
 
 .footer-input {
-  margin: 0;
   padding: 8px 16px;
+  width: 100%;
+  margin-bottom: 16px;
+  opacity: 0.6;
 
   font-size: 12px;
   line-height: 2;
@@ -488,6 +597,9 @@ p {
   display: flex;
   justify-content: center;
   padding: 8px 24px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 .icon-send {
   fill: #ffffff;

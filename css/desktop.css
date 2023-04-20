@@ -96,6 +96,11 @@
   }
 
 /*.............................COSTUMERS.......................*/
+.costumers-list {
+  flex-wrap: nowrap; 
+}
+.customers-item {
+  flex-basis: calc((100% - 5 * 24px) / 6);}
 /*............................./MAIN.......................*/
 
 /*.............................FOOTER.......................*/
@@ -104,8 +109,6 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
-
-  
   .footer-container {
     flex-wrap: nowrap;
   }
@@ -117,13 +120,9 @@
   margin-left: 120px;
   }
   .form-wrap {
-    display: block;
-  margin-left: auto;
+  margin-left: 80px;
   }
-
-
   .footer-input {
-    width: 260px;
     opacity: 1;
   }
 
