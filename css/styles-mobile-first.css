@@ -94,6 +94,9 @@ p {
 }
 
 /*.............................HEADER.......................*/
+.header-container {
+  display: flex;
+}
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -123,10 +126,6 @@ p {
 .header-logo:focus {
   color: var(--accent-color);
 }
-
-
-
-
 /*.............................MAIN.......................*/
 
 /*.............................HERO.......................*/
@@ -413,9 +412,7 @@ p {
   color: #f4f4fd;
 }
 
-/* .footer-container {
-  display: flex;
-} */
+
 .footer-container-soc {
   width: 208px;
 }
@@ -443,6 +440,10 @@ p {
 }
 
 /*.............................FOOTER FORM.......................*/
+.footer-container {
+  display: flex;
+}
+
 .form-wrap {
   display: block;
 }
@@ -524,7 +525,7 @@ p {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
-.modal-close-btn {
+.close-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -546,7 +547,7 @@ p {
 .close-icon {
   fill: currentColor;
 }
-.modal-close-btn:hover {
+.close-btn:hover {
   background-color: var(--pressed-state-color);
   color: #ffffff;
 }
@@ -664,7 +665,6 @@ margin-bottom: 16px;
 }
 .check-text a{
 color: var(--accent-color);
-/* margin-left: auto; */
 }
 
 .check-text span {
@@ -687,3 +687,4 @@ color: var(--accent-color);
 .input-checkbox:focus + .check-text span {
   border-color: var(--pressed-state-color);
 }
+

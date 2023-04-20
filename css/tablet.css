@@ -10,7 +10,6 @@
 /*.............................HEADER.......................*/
 
   .header-container {
-    display: flex;
     align-items: center;
   }
   .header-navigation {
@@ -103,7 +102,9 @@
   .contacts-mail-phone:focus {
     color: var(--pressed-state-color);
   }
-
+  .menu-open-btn, .mobile-menu {
+    display: none;
+  }
 /*.............................MAIN.......................*/
 /*.............................HERO.......................*/
   .hero-title {
@@ -157,7 +158,6 @@ flex-basis: calc((100% - 24px) / 2);
 
 /*.............................FOOTER.......................*/
 .footer-container {
-  display: flex;
   flex-wrap: wrap;
 }
 .footer-logo-box {

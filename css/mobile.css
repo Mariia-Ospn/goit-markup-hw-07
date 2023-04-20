@@ -1,7 +1,91 @@
 
 @media screen and (max-width: 480px) { 
 /*.............................HEADER.......................*/
+.header-container {
+  justify-content: space-between;
+}
+.header-list, .contacts-list {
+  display: none;
+  }
 
+/*.............................MOBILE MENU.......................*/
+.menu-open-btn {
+  background-color: transparent;
+  border:none;
+  } 
+  .menu-open-icon{
+  stroke: #2E2F42;
+  }
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 80px 24px 40px 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+.menu-close-btn {
+  background-color: rgb(231, 233, 252, 0);
+}
+.menu-close-btn:hover {
+  background-color: var(--pressed-state-color);
+}
+  .mobile-menu-list {
+    margin-bottom: 64px;
+  }
+  .mobile-menu-item:not(:last-child) {
+    margin-bottom:40px;
+  }
+  .mobile-menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+  
+    transition: color var(--typical-transition);
+  }
+  .mobile-menu-link:hover,
+  .mobile-menu-link:focus {
+    color: var(--pressed-state-color);
+  }
+  .mobile-mail-phone {
+  display: block;
+  color: var(--primery-text-color);
+  transition: color var(--typical-transition);
+  }
+  .mobile-mail-phone:hover,
+  .mobile-mail-phone:focus {
+    color: var(--pressed-state-color); 
+  }
+  .mobile-phone{
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+  }
+  .mobile-mail {
+    margin-bottom: 48px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .mobile-soc-list {
+    justify-content: space-around;
+  }
 /*.............................MAIN.......................*/
 /*.............................HERO.......................*/
 .hero-title {
@@ -45,41 +129,42 @@
 /*............................./MAIN.......................*/
 
 /*.............................FOOTER.......................*/
+.footer-container {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+} 
 
- .footer-logo-box {
+.footer-logo-box>.logo {
+  justify-content: center;
+}
+.footer-text {
+text-align: start;
+}
+.footer-logo-box {
     margin-bottom: 72px;
   }
-  .footer-logo-box>.logo {
-    justify-content: center;
-  }
-  .footer-text {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .footer-container-soc {
+
+.footer-container-soc {
     margin-bottom: 72px;
-    margin-left: auto;
-    margin-right: auto;
   }
-  .footer-subtitle {
-    text-align: center;
-  }
-  .form-wrap {
-    width: 100%;
-  }
-  .form-wrap b {
-    text-align: center;
+.form-wrap {
+    width: 100%;  
   }
 
-  .footer-input {
+.footer-input {
     width: 100%;
     margin-bottom: 16px;
     opacity: 0.6;
   }
   .footer-btn {
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
   }
+
+
+
+
 /*.............................MODAL.......................*/
 /*.........................MODAL WINDOW.......................*/
   .form {
