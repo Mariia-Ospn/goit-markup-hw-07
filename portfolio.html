@@ -134,7 +134,13 @@
           <li class="examples-item item">
             <a href="" class="examples-link link">
               <div class="portfolio-cover-wrap">
-                <img src="./images/img-min.jpg" alt="Banking App" width="360" />
+                <picture>
+                  <source srcset="./images/img-min.jpeg 1x, ./images/img-dt-2x.jpeg 2x" media="(min-width: 768px)"/> 
+                  <source srcset="./images/img-tab.jpeg 1x, ./images/img-tab-2x.jpeg 2x" media="(min-width: 480px)"/>
+                  <source srcset="./images/img-mobile.jpeg 1x, ./images/img-mobile-2x.jpeg 2x" media="(max-width: 479px)"/>
+        
+                  <img src="./images/img-min.jpeg" alt="Banking App" width="396" />
+                </picture>
                 <p class="portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                   Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
