@@ -1,5 +1,5 @@
 @media screen and (min-width: 768px) {
-.container {
+  .container {
     max-width: 768px;
   }
 
@@ -7,7 +7,7 @@
     display: flex;
   }
 
-/*.............................HEADER.......................*/
+  /*.............................HEADER.......................*/
 
   .header-container {
     align-items: center;
@@ -17,35 +17,35 @@
   }
 
   /* Навигация */
-.header-list {
+  .header-list {
     display: flex;
     margin-left: 76px;
   }
-  
+
   .header-item {
     margin-right: 40px;
   }
-  
+
   .header-item:last-child {
     margin-right: 0;
   }
-  
+
   .header-link {
     position: relative;
-  
+
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
-  
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-  
+
     transition: color var(--typical-transition);
   }
-  
+
   .header-link::after {
     content: "";
     position: absolute;
@@ -56,37 +56,37 @@
     border-radius: 2px;
     background-color: var(--pressed-state-color);
     opacity: 0;
-  
+
     transition: opacity var(--typical-transition);
   }
-  
+
   .header-link:hover::after {
     opacity: 1;
   }
-  
+
   .header-link:hover,
   .header-link:focus {
     color: var(--pressed-state-color);
   }
-  
+
   a.current {
     color: var(--pressed-state-color);
   }
-  
+
   a.current::after {
     opacity: 1;
   }
 
   /* Контакты */
-.address-contacts {
+  .address-contacts {
     font-style: normal;
     margin-left: auto;
   }
 
-  .contacts-list { 
+  .contacts-list {
     display: block;
   }
- 
+
   .contacts-mail-phone {
     font-size: 12px;
     line-height: 1.167;
@@ -94,19 +94,26 @@
     color: var(--primery-text-color);
     transition: color var(--typical-transition);
   }
-  .contacts-mail {
-    display: block;
-    margin-bottom: 12px;
-  }
+
   .contacts-mail-phone:hover,
   .contacts-mail-phone:focus {
     color: var(--pressed-state-color);
   }
-  .menu-open-btn, .mobile-menu {
+  .contacts-mail {
+    display: block;
+    margin-bottom: 12px;
+  }
+  .menu-open-btn,
+  .mobile-menu {
     display: none;
   }
-/*.............................MAIN.......................*/
-/*.............................HERO.......................*/
+  /*.............................MAIN.......................*/
+  /*.............................HERO.......................*/
+  .hero-section {
+    height: 436px;
+    max-width: 768px;
+  }
+  
   .hero-title {
     margin-bottom: 36px;
     width: 496px;
@@ -115,88 +122,77 @@
     line-height: 1.07;
   }
 
-  .hero-section {
-    height: 436px;
-    max-width: 768px;
-  }
-/*.............................SECTIONS.......................*/
-/*.............................OUR PRINCIPLES.......................*/
 
-.our-principles-item>.section-subtitle {
+  /*.............................SECTIONS.......................*/
+  /*.............................OUR PRINCIPLES.......................*/
+
+  .our-principles-item > .section-subtitle {
     text-align: start;
-}
-.our-principles-list {
+  }
+  .our-principles-list {
     flex-wrap: wrap;
-    gap: 24px; 
-}
-.our-principles-item {
+    gap: 24px;
+  }
+  .our-principles-item {
     flex-basis: calc((100% - 24px) / 2);
   }
 
-/*.............................TEAM.......................*/
+  /*.............................TEAM.......................*/
 
- .team-section-list {
+  .team-section-list {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px; }
+    gap: 24px;
+  }
 
-/* .team-item {
-flex-basis: calc((100% - 24px) / 2);
-} */
+  /*.............................COSTUMERS.......................*/
+  .customers-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+  }
+  /*............................./MAIN.......................*/
 
-/*.............................COSTUMERS.......................*/
-.costumers-list {
+  /*.............................FOOTER.......................*/
+  .footer-container {
   flex-wrap: wrap;
-}
+  }
+  .footer-text {
+    margin-bottom: 0;
+  }
+  .footer-logo-box {
+    margin-left: 108px;
+    margin-bottom: 72px;
+  }
 
-/* .customers-item {
-  width: 168px;
-  height: 88px;
-} */
-
-/*............................./MAIN.......................*/
-
-/*.............................FOOTER.......................*/
-.footer-container {
-  flex-wrap: wrap;
-  flex-direction: row;
-  text-align: unset;
-  align-items: unset;
+  .footer-container-soc {
+    margin-left: 24px;
+  }
+  /*.............................FOOTER FORM.......................*/
+  .form-wrap {
+    margin-left: 108px;
+  }
+  
+  .footer-form {
+    display: flex;
+  }
+  .footer-input {
+    width: 264px;
+  }
+  .footer-btn {
+    margin-left: 24px;
+  }
+  /*.............................MODAL.......................*/
+  .modal {
+    padding: 72px 24px 24px 24px;
+  }
 }
-.footer-logo-box>.logo {
-  justify-content: left;
+@media screen and (max-width: 1199px) {
+.contacts-mail {
+  display: block;
+  padding-top: 16px;
+  margin-bottom: 12px;
 }
-.footer-logo-box {
-margin-left: 108px;
-margin-bottom: 72px;
+.contacts-phone {
+  display: block;
+  padding-bottom: 16px;
 }
-.footer-text {
-margin-bottom: 0;
-}
-
-.footer-container-soc {
-  margin-left: 24px;
-  margin-bottom: 0;
-}
-.form-wrap {
-margin-left: 108px;
-}
-.footer-form {
-  display: flex;
-} 
-.footer-input {
-  margin-bottom: 0;
-  width: 264px;
-  opacity: 0.6;
-}
-.footer-btn {
-  margin-left: 24px;
-  margin-right: 0;
-}
-/*.............................MODAL.......................*/
-.modal {
-  padding: 72px 24px 24px 24px;
-}
-
-
 }

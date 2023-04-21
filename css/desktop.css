@@ -89,10 +89,7 @@
  /*.............................TEAM.......................*/
   .team-section-list {
     flex-wrap: nowrap;
-    gap: 0;}
-
-  .team-item {
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    gap: 0;
   }
 
 /*.............................COSTUMERS.......................*/
@@ -119,6 +116,7 @@
   .footer-container-soc {
   margin-left: 120px;
   }
+  /*.............................FOOTER FORM.......................*/
   .form-wrap {
   margin-left: 80px;
   }
