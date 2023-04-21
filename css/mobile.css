@@ -35,6 +35,7 @@
   position: fixed;
   top: -101vh;
   left: 50%;
+  z-index:1;
 
   max-width: 428px;
   height: 100vh;
@@ -123,6 +124,28 @@
 }
 .customers-item {
   flex-basis: calc((100% - 24px) / 2);
+}
+
+/*.............................PORTFOLIO.......................*/
+/* focus buttons */
+.focus-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+/*.............................WORK EXAMPLES.......................*/
+.our-works-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.work-examples-list {
+  margin-bottom: -48px;
+}
+.examples-item {
+  width: 396px;
+  margin-bottom: 48px;
 }
 
   /*.............................FOOTER.......................*/
