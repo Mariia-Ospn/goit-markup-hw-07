@@ -150,11 +150,15 @@
   }
   .our-principles-list {
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
+    margin-bottom:0;
   }
   .our-principles-item {
     flex-basis: calc((100% - 24px) / 2);
+    margin-bottom: 0;
   }
+
+ 
 
   /*.............................TEAM.......................*/
 

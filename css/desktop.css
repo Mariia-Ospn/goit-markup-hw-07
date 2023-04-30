@@ -50,9 +50,7 @@
   .our-principles-section {
     padding-bottom: 0;
   }
-  .our-principles-list {
-    margin-bottom: 0; 
-  }
+
 .our-principles-item>.section-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -65,7 +63,6 @@
 }
   .our-principles-item {
     flex-basis: calc((100%-3 * 24) / 4);
-    margin-bottom: 0;
   }
 
   .our-principles-box {
